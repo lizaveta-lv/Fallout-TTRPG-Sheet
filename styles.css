@@ -1,0 +1,437 @@
+
+* {
+    font-family: Monofonto, Verdana;
+    scroll-behavior: smooth;
+    overflow: wrap;
+}
+html {
+    scroll-padding-top: 110px;
+}
+form{
+    padding-top: 100px;
+   
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "char-info special-stats weapons"
+        "skills tracking weapons"
+        "footer footer footer";
+    gap: 10px;
+}
+
+
+/* HEADERS*/
+header {
+    text-align: center;
+    z-index: 100;
+    border-bottom: 3px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: lightgrey;
+   
+}
+nav { 
+    display: block; 
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center; 
+    height: 100%; 
+    padding: 0 20px; 
+    margin-top: 50px;
+   
+} 
+
+nav ul { 
+    display: flex;
+    flex-wrap: wrap; /* Allows the links to wrap when necessary */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-around; 
+    
+} 
+
+nav ul li { 
+    margin-right: 20px; 
+} 
+
+nav ul li:last-child { 
+    margin-right: 0; 
+} 
+nav a{
+    text-decoration: none;
+    color: black
+}
+nav a:hover {
+    background-color: darkgrey;
+    color: white;
+}
+@media (max-width: 400px){
+    nav ul {
+        flex-direction: column;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*INVISIBLE ELEMENT*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+#special {
+    scale: 130%;
+    width: 420px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.special-stats {
+    column-span: 2;
+    
+}
+.tracking {
+    column-span: 2;
+}
+.special-letters {
+    font-size: 40px;
+}
+
+.special-words {
+    font-size: 10px;
+}
+
+.special-stats > td > input{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.special-bonus span {
+    border: 1px solid;
+    padding: 6px 12px;
+    background-color: white;
+    
+}
+
+.special-bonus td{
+    text-align: center;
+    
+    
+}
+/*== Removing arrows from numbe inputs ==*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.skill-atribute {
+    color: rgb(116, 116, 116);
+    font-size: 10px;
+    margin: auto 5px;
+}
+
+.skill-atribute option, .skill-atribute select{
+    color: rgb(116, 116, 116);
+    font-size: 10px;
+    border: 0;
+}
+
+.skills input{
+    width: 30px;
+    margin-left: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.skills {
+   width: 220px; 
+   scale: 110%;
+    margin-left: 20px;
+    margin-top: 10px;
+   
+}
+.skills-line {
+    text-align: right;
+
+}
+
+.char-info {
+    width: 240px; 
+    scale: 110%;
+    margin-left: 20px;
+    
+}
+.char-info input {
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    min-width: 20px;
+    margin-left: 5px;
+    padding-left: 8px;
+    
+}
+.char-info select {
+    border: 0;
+    border-bottom: 1px solid;
+    width: 100%;
+    margin-left: 5px;
+    padding-left: 8px;
+    
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-left {
+    display: inline-flex;
+    
+}
+
+legend {
+    margin-bottom: -20px;;
+}
+
+.weapon td > input{
+    height: 30px;
+    border: 1px solid;
+    border: 0;
+    border-right: 1px solid;
+}
+.weapon td:first-of-type > input {
+    border-left: 1px solid;
+}
+
+.weapon th, td {
+    padding: 0;
+}
+
+
+.weapon table{
+    width: 100%;
+    border-collapse: collapse;
+    
+
+}
+
+
+.non-table div > input  {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid;
+    margin: 0 8px;
+}
+
+
+.no-margin{
+   
+    margin-right: 20px;
+    margin-left: -8px;
+    
+}
+.no-margin label{
+   
+    margin-left: 8px;
+    
+}
+.weapon {
+    font-size: 12px;
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px;
+}
+
+.weapon label {
+    white-space: nowrap;
+}
+
+
+.weapons {
+    width: 320px;
+    
+    padding-right:none;
+}
+
+.notes {
+    width: 300px;
+    grid-area: notes;
+    
+}
+
+.traits-n-perks {
+    width: 500px;
+    height: 400px;
+}
+
+.weapon input {
+    width: 100%; /* Make inputs take the full width of the cell */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.square-inputs > td > input {
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+    
+    
+}
+
+.grey-desc {
+    font-size: 10px;
+    color: darkgray;
+    text-align: center;
+}
+
+.square-titles {
+    font-size: 12px;
+    max-width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+    
+   
+}
+
+.weapon table {
+    table-layout: fixed;
+    width: 100%;
+   
+}
+
+.fate-caps {
+    width: 300px;
+    display: flex;
+   
+}
+
+.tracking div{
+   
+}
+
+.armor {
+    width: 125px;
+}
+
+.conditions {
+    width: 370px;
+}
+
+.armour-cond{
+    width: 220px;
+    
+}
+
+.armour-cond input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid;
+}
+.game-tracking {
+    scale: 110%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.fake-area {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 635px;
+    height: 340px;
+}
+.unedit-area{
+    float: right;
+    background-color: white;
+    width: 140px;
+    height: 130px;
+    
+    z-index: 1;
+}
+.unedit-area table {
+    margin: 0 auto;
+}
+.inventory {
+    width: 640px;
+    height: 400px;
+}
+.load-input {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -10px;
+    text-align: center;
+    
+}
+
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 3px dotted darkgray; /* If you want dots under the hoverable text */
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    border: 1px solid black;
+    font-size: 90%;
+    font-weight: normal;
+
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .lined {
+    background: repeating-linear-gradient(
+        to bottom,
+        white 2px,
+        white 17px, /* Matches the line height and font size */
+        lightgray 17px,
+        lightgray 18px
+    );
+    border: 0;
+   
+}

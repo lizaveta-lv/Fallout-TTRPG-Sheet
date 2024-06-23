@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Fallout TTRPG Character Sheet</title>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
+        <link href="https://fonts.cdnfonts.com/css/monofonto" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h3>Fallout TTRPG Character Sheet</h3>
+            <nav>
+                <ul>
+                    <li><a href="#character-info">Character Info</a></li>
+                    <li><a href="#special">S.P.E.C.I.A.L.</a></li>
+                    <li><a href="#tracking">Tracking</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#weapons">Weapons</a></li>
+                    <li><a href="#traits-n-perks">Traits & Perks</a></li>
+                    <li><a href="#inventory">Inventory</a></li>
+                    <li><a href="#caps">Fate Caps</a></li>
+                    <li><a href="#notes">Notes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form>
+                <div class="inline">
+                    <div>
+                        <section role="region" aria-labelledby="character-info" id="character-info">
+                            <fieldset class="char-info">
+                                <legend><h2>Character Info</h2></legend>
+                            <div class="info inline">
+                                <label>Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="info inline">
+                                <label>Race</label>
+                                <select>
+                                    <option> </option>
+                                    <option>Human</option>
+                                    <option>Ghoul</option>
+                                    <option>Gen-2 Synth</option>
+                                    <option>Robot</option>
+                                    <option>Super Mutant</option>
+                                </select>
+                            </div>
+                            <div class="info inline">
+                                <label>Background</label>
+                                <input type="text">
+                            </div>
+                            
+                            <span class="inline"><div class="info inline">
+                                <label>Level</label>
+                                <input type="number" min="1" max="30" value="1">
+                            </div>
+                            <div class="info inline">
+                                <label>XP</label>
+                                <input type="number" min="0" value="0">
+                            </div></span>
+                            
+                            </fieldset>
+                        </section>
+                        <section role="region" aria-labelledby="skills" id="skills">
+                            <fieldset class="skills">
+                                <legend><h2>Skills</h2></legend>
+                            
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(charisma)</span>Barter</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(<select><option>perception</option><option>intelligence</option></select>)</span>Breach</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(intelligence)</span>Crafting</label><input>
+                            </div class="skills-line">
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(perception)</span>Explosives</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(agility)</span>Guns</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(<select><option>strength</option><option>charisma</option></select>)</span>Intimidation</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(<select><option>perception</option><option>intelligence</option></select>)</span>Medicine</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(strength)</span>Melee Weapons</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(intelligence)</span>Science</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(agility)</span>Sneak</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(charisma)</span>Speech</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(endurance)</span>Survival</label><input>
+                            </div>
+                            <div class="skills-line">
+                                <label><span class="skill-atribute">(strength)</span>Unarmed</label><input>
+                            </div>
+                            </fieldset>
+                        </section>
+                        <section id="caps" class="fate-caps">
+                            <fieldset>
+                                <legend><h2>Fate caps</h2></legend>
+                                <img width="70" src="https://sun9-43.userapi.com/impg/eQt6H_0dHqPXo-6whKpNdbATxcW_272bltmUIA/XD631vbMvbo.jpg?size=400x400&quality=95&sign=214b13e275bce12d0ed39f721979f71d&type=album">
+                                <img width="70" src="https://sun9-43.userapi.com/impg/eQt6H_0dHqPXo-6whKpNdbATxcW_272bltmUIA/XD631vbMvbo.jpg?size=400x400&quality=95&sign=214b13e275bce12d0ed39f721979f71d&type=album">
+                                <img width="70" src="https://sun9-43.userapi.com/impg/eQt6H_0dHqPXo-6whKpNdbATxcW_272bltmUIA/XD631vbMvbo.jpg?size=400x400&quality=95&sign=214b13e275bce12d0ed39f721979f71d&type=album">
+                                
+                            </fieldset>
+                        </section>
+                    </div>
+                    <div>
+                        <section role="region" aria-labelledby="special" id="special">
+                            <h2 class="sr-only">S.P.E.C.I.A.L.</h2>
+                            <div>
+                                <table>
+                                    <tr class="special-letters">
+                                        <th>S</th>
+                                        <th>P</th>
+                                        <th>E</th>
+                                        <th>C</th>
+                                        <th>I</th>
+                                        <th>A</th>
+                                        <th>L</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr class="grey-desc">
+                                            <th>strength</th>
+                                            <th>perception</th>
+                                            <th>endurance</th>
+                                            <th>charisma</th>
+                                            <th>intellect</th>
+                                            <th>agility</th>
+                                            <th>luck</th>
+                                        </tr>
+                                        <tr class="special-stats">
+                                            <td><input type="number" value="5"></td>
+                                            <td><input type="number" value="5"></td>
+                                            <td><input type="number" value="5"></td>
+                                            <td><input type="number" value="5"></td>
+                                            <td><input type="number" value="5"></td>
+                                            <td><input type="number" value="5"></td>
+                                            <td><input type="number" value="5"></td>
+                                        </tr>
+                                        <tr class="special-bonus">
+                                            <td><span>0</span></td>
+                                            <td><span>0</span></td>
+                                            <td><span>0</span></td>
+                                            <td><span>0</span></td>
+                                            <td><span>0</span></td>
+                                            <td><span>0</span></td>
+                                            <td><span>0</span></td>
+                                        </tr>
+                                    </tbody>
+                                    
+                                </table>
+                            </div>
+                        </section>
+                        <section  role="region" id="tracking">
+                            <fieldset>
+                                <legend><h2>Tracking</h2></legend>
+                                <div class="inline-left">
+                                    <div>
+                                        <div class="inline-left no-margin">
+                                            <div class="armor">
+                                                <table>
+                                                    <tr>
+                                                        <th><span class="tooltip">AC<span class="tooltiptext">Armor Class</span></span></th>
+                                                        <th><span class="tooltip">DT<span class="tooltiptext">Damage Threshold</span></span></th>
+                                                    </tr>
+                                                    <tr class="square-inputs">
+                                                        <td><input></td>
+                                                        <td><input></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="armour-cond">
+                                                <div>
+                                                <label>Armour Upgrades</label>
+                                                <textarea cols="32" class="lined"></textarea>
+                                            </div>
+                                            <div>
+                                                <label>Levels of Decay</label>
+                                                <input>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="conditions">
+                                            <lebel>Current conditions</lebel>
+                                            <textarea rows="4" cols="50" class="lined"></textarea>
+                                        </div>
+                                        <div class="survivals">
+                                            <div class="inline-left">
+                                                <table>
+                                                    <tr class="square-titles">
+                                                        <td><span class="tooltip">Levels of<br>Hunger<span class="tooltiptext">-1 to d20 rolls</span></span></td>
+                                                        <td><span class="tooltip">Levels of<br>Dehydration<span class="tooltiptext">-1 to d20 rolls</span></span></td>
+                                                        <td><span class="tooltip">Levels of<br>Exaustion<span class="tooltiptext">-1 to d20 rolls</span></span></td>
+                                                        
+                                                    </tr>
+                                                    <tr class="square-inputs">
+                                                        <td><input></td>
+                                                        <td><input></td>
+                                                        <td><input></td>
+                                                        
+                                                    </tr>
+                                                    <tr class="grey-desc">
+                                                        <td colspan="3">You are immune to Hunger and Dehydration<br>if you are Gen-2 synth or Robot</td>
+                                                        
+                                                    </tr>
+                                                </table>
+                                                <table>
+                                                    <tr class="square-titles">
+                                                        <td><span class="tooltip">Radiation<br>DC<span class="tooltiptext">12 - Endurance modifier</span></span></td>
+                                                        <td><span class="tooltip">Levels of<br>Radiation<span class="tooltiptext">-1 to d20 rolls,<br>1d12 damage</span></span></td>
+                                                    </tr>
+                                                    <tr class="square-inputs">
+                                                        <td><input></td>
+                                                        <td><input></td>
+                                                    </tr>
+                                                    <tr class="grey-desc">
+                                                        <td colspan="2">You are immune to Radiation if<br>you are not Human</td>
+                                                    </tr>
+            
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="game-tracking">
+                                        <table>
+                                            <tr class="square-titles">
+                                                <td>Stamina <br>Points</td>
+                                                <td>Hit <br>Points</td>
+                                                <td><span class="tooltip">Healing<br>Rate<span class="tooltiptext">half of (Endurance + level)</span></span></td>
+                                            </tr>
+                                            <tr class="square-inputs">
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                                
+                                                
+                                            </tr>
+                                        </table>
+                                        <table>
+                                            <tr class="square-titles">
+                                                <td><span class="tooltip">Combat<br>Sequence<span class="tooltiptext">Perseption</span></span></td>
+                                                <td><span class="tooltip">Action<br>Points<span class="tooltiptext">(10 + Agility modifier)</span></span></td>
+                                                <td><span class="tooltip">Levels of<br>Fatigue<span class="tooltiptext">-1 to d20 rolls remove one level at end of each turn</span></span></td>
+                                            </tr>
+                                            <tr class="square-inputs">
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                            </tr>
+                                        </table>
+                                        <table>
+                                            <tr class="square-titles">
+                                                <td><span class="tooltip">Passive<br>Sense<span class="tooltiptext">12 + Perception modifier</span></span></td>
+                                                <td><span class="tooltip">Party<br>Nerve<span class="tooltiptext">all player's Charisma modifier added, then halved</span></span></td>
+                                                <td><span class="tooltip">Group<br>Sneak<span class="tooltiptext">all player's sneak bonus added, then divided by number of players</span></span></td>
+                                            </tr>
+                                            <tr class="square-inputs">
+                                                <td><input></td>
+                                                <td><input></td>
+                                                <td><input></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                            </fieldset>
+                        </section>
+                    </div>
+                   <div>
+                    <section role="region" aria-labelledby="weapons" id="weapons">
+                        <fieldset class="weapons">
+                            <legend><h2>Weapons</h2></legend>
+                            <div >
+                            <div class="weapon">
+                                <table>
+                                    <tr>
+                                        <th style="width: 33%">Weapon</th>
+                        
+                                        <th style="width: 11%">AP</th>
+                                        <th style="width: 22%">Attack</th>
+                                        
+                                        <th style="width: 22%">Damage</th>
+                                        
+                                        <th style="width: 15%">Range</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                    </tr>
+                                </table>
+                                <div class="non-table">
+                                    <div class="inline">
+                                        <label>Crit</label>
+                                        <input>
+                                    </div>
+                                    <div class="no-margin">
+                                        <label>Special Properties</label>
+                                        <input>
+                                    </div>
+                                    <div class="inline">
+                                        <label>AMMO</label>
+                                        <input>
+                                    </div>
+                                    <div class="inline">
+                                        <label>Mods</label>
+                                        <input>
+                                    </div>
+                                    <div class="inline">
+                                        <label>Levels of Decay</label>
+                                        <input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weapon">
+                                <table>
+                                    <tr>
+                                        <th>Weapon</th>
+                                        <th>AP</th>
+                                        <th>Attack</th>
+                                        <th>Damage</th>
+                                        <th>Range</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                    </tr>
+                                </table>
+                                <div class="non-table">
+                                    <div class="inline">
+                                        <label>Crit</label>
+                                        <input>
+                                    </div>
+                                    <div class="no-margin">
+                                        <label>Special Properties</label>
+                                        <input>
+                                    </div>
+                                    <div class="inline">
+                                        <label>AMMO</label>
+                                        <input>
+                                    </div>
+                                    <div class="inline">
+                                        <label>Mods</label>
+                                        <input>
+                                    </div>
+                                    <div class="inline">
+                                        <label>Levels of Decay</label>
+                                        <input>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="weapon">
+                                <table>
+                                    <tr>
+                                        <th>Weapon</th>
+                                        <th>AP</th>
+                                        <th>Attack</th>
+                                        <th>Damage</th>
+                                        <th>Range</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                        <td><input></td>
+                                    </tr>
+                                </table>
+                                <div class="non-table"><div class="inline">
+                                    <label>Crit</label>
+                                    <input>
+                                </div>
+                                <div class="no-margin">
+                                    <label>Special Properties</label>
+                                    <input>
+                                </div>
+                                <div class="inline">
+                                    <label>AMMO</label>
+                                    <input>
+                                </div>
+                                <div class="inline">
+                                    <label>Mods</label>
+                                    <input>
+                                </div>
+                                <div class="inline">
+                                    <label>Levels of Decay</label>
+                                    <input>
+                                </div></div>
+                                
+                            </div>
+                        </div>
+                        </fieldset>
+    
+                    </section>
+                   </div>
+                </div>
+                
+                <div class="inline-left">
+                    <section role="region" aria-labelledby="traits-n-perks">
+                    
+                        <fieldset class="traits-n-perks" id="traits-n-perks">
+                            <legend><h2>Traits & Perks</h2></legend>
+                            <textarea rows="20" cols="80" class="lined" placeholder="Write your traits and perks here..."></textarea>
+                        </fieldset>
+        
+        
+                    </section>
+                    <section role="region" aria-labelledby="inventory">
+                        <fieldset class="inventory" id="inventory">
+                            <legend><h2>Inventory</h2></legend>
+                           
+                            <div class="fake-area lined"  contenteditable="true">
+                                <div class="unedit-area" contenteditable="false">
+                                    <table>
+                                        <tr class="square-titles">
+                                            <td>Caps</td>
+                                            <td><span class="tooltip">Carry<br>Load<span class="tooltiptext">Strength x 10</span></span></td>
+                                        </tr>
+                                        <tr class="square-inputs">
+                                            <td><input></td>
+                                            <td><input></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><input class="load-input"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                    </section>
+                </div>
+
+               
+                
+                
+                
+                
+                <section></section>
+                <section>
+                    <fieldset class="notes" id="notes">
+                        <legend><h2>Notes</h2></legend>
+                        <textarea rows="20" cols="55" class="lined" placeholder="Type your game notes here..."></textarea>
+                    </fieldset>
+                </section>
+
+            </form>
+        </main>
+
+    </body>
+    <footer>
+
+    </footer>
+</html>
